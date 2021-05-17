@@ -1,0 +1,15 @@
+<div class="detail-section">
+    <div class="container">
+        <img src="{{ product.imageUrl }}" alt="#" class="detail-img">
+        <h3 class="py-3">{{ product.name }}</h3>
+        <div class="price">{{ product.unitPrice | currency:'VND':'' }} ₫</div>
+        <button (click)="addToCart()" class="btn btn-primary btn-sm">Add to cart</button>
+
+        <hr>
+        <h4>Mô tả</h4>
+        <p>{{ product.description }}</p>
+
+        <a href="/products"><- Back to Home!</a>
+
+    </div>
+</div>
